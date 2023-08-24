@@ -1,14 +1,16 @@
-<div class="container__content">
+<div class="w-full h-screen mt-5 flex flex-col items-center">
   <div class="content__cover">
-    <img src="{{ photoCover }}" alt="" srcset="">
+    <img class="border-4 border-solid border-[rgb(144,144,144)] rounded-3xl w-[31rem] min-w-[31rem] h-72"
+      src="{{ photoCover }}" alt="" srcset="">
   </div>
   <div class="content__title">
     <h1>{{ contentTitle }}</h1>
     <hr />
   </div>
-  <div class="content__description">
-    <a [routerLink]="['']"> << VOLTAR </a>
-    <p>
+  <div class="mt-4">
+    <a class="cursor-pointer" [routerLink]="['']">
+      << VOLTAR </a>
+        <p class="mt-5 text-[rgb(198,197,197)] first-letter:capitalize">
       {{ contentDescription }}
     </p>
   </div>
